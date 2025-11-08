@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Basmala Hesham — Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- PARTICLE BACKGROUND -->
+    <canvas id="bg"></canvas>
+
+    <!-- NAV -->
+    <nav class="nav">
+      <div class="nav-left">
+        <div class="logo">Basmala<span class="accent">H</span></div>
+      </div>
+      <ul class="nav-right">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="toggle menu">☰</button>
+    </nav>
+
+    <!-- MAIN -->
+    <main>
+      <!-- HOME -->
+      <section id="home" class="section hero">
+        <div class="hero-inner container">
+          <div class="hero-left">
+            <h1 class="glow">Basmala Hesham</h1>
+            <p class="subtitle">
+              Computer Science Student • AI & Data Science Enthusiast
+            </p>
+            <p class="lead">
+              Computer science student with strong skills in C++, Python and
+              algorithms. Passionate about building data-driven solutions and
+              scalable systems.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn" href="#projects">View Projects</a>
+              <a class="btn ghost" href="#contact">Contact Me</a>
+            </div>
+
+            <div class="meta-row">
+              <a class="meta-link" href="mailto:basmalahesham232@gmail.com"
+                >✉️ basmalahesham232@gmail.com</a
+              >
+              <a class="meta-link" href="tel:+201030702240"
+                >📱 +20 1030702240</a
+              >
+            </div>
+
+            <div class="socials">
+              <a
+                href="https://www.linkedin.com/in/basmala-hesham/"
+                target="_blank"
+                aria-label="LinkedIn"
+              >
+                <!-- LinkedIn SVG -->
+                <svg viewBox="0 0 24 24" class="social-icon">
+                  <path
+                    d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6 1.12 6 0 4.88 0 3.5 0 2.12 1.12 1 2.5 1 3.88 1 4.98 2.12 4.98 3.5zM.22 24H4.8V7.98H.22V24zM9.4 7.98v16.02h4.58v-8.93c0-4.43 5.86-4.79 5.86 0v8.93h4.58V14.2c0-8.93-9.48-8.59-10.91-4.2V7.98H9.4z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://github.com/BasmalaHesham2"
+                target="_blank"
+                aria-label="GitHub"
+              >
+                <!-- GitHub SVG -->
+                <svg viewBox="0 0 24 24" class="social-icon">
+                  <path
+                    d="M12 .5C5.73.5.75 5.48.75 11.74c0 4.94 3.2 9.13 7.64 10.61.56.1.76-.24.76-.53 0-.26-.01-1.12-.02-2.03-3.11.68-3.76-1.5-3.76-1.5-.51-1.31-1.25-1.66-1.25-1.66-1.02-.7.08-.69.08-.69 1.12.08 1.71 1.17 1.71 1.17 1 .01 1.62.69 2 1.05.62.91 1.64.65 2.04.5.06-.39.25-.65.45-.8-2.48-.28-5.09-1.24-5.09-5.5 0-1.22.44-2.21 1.15-2.99-.12-.28-.5-1.41.11-2.94 0 0 .95-.3 3.12 1.15.9-.25 1.86-.38 2.82-.38.96 0 1.92.13 2.82.38 2.17-1.45 3.12-1.15 3.12-1.15.61 1.53.23 2.66.11 2.94.71.78 1.15 1.77 1.15 2.99 0 4.27-2.62 5.22-5.11 5.5.26.22.49.65.49 1.31 0 .95-.01 1.72-.01 1.95 0 .29.2.63.77.52C20.05 20.86 23.25 16.67 23.25 11.74 23.25 5.48 18.27.5 12 .5z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-right">
+            <div class="card profile-card">
+              <div class="card-inner">
+                <div class="avatar">
+                  <!-- simple circle avatar -->
+                  <svg viewBox="0 0 100 100" class="avatar-svg">
+                    <circle cx="50" cy="30" r="20" />
+                    <rect x="15" y="55" width="70" height="30" rx="6" />
+                  </svg>
+                </div>
+                <h3>Basmala Hesham</h3>
+                <p class="muted">
+                  Zagazig University — Computer & Information (2023–2027)
+                </p>
+
+                <div class="mini-stats">
+                  <div><strong>GPA</strong><span>3.8</span></div>
+                  <div><strong>Years</strong><span>2023–2027</span></div>
+                </div>
+
+                <div class="typing">
+                  <span id="typed"></span><span class="cursor">|</span>
+                </div>
+
+                <div class="quick-links">
+                  <a href="https://github.com/BasmalaHesham2" target="_blank"
+                    >Repo</a
+                  >
+                  <a
+                    href="https://www.linkedin.com/in/basmala-hesham/"
+                    target="_blank"
+                    >LinkedIn</a
+                  >
+                  <a
+                    href="https://github.com/BasmalaHesham2/Movie-Recommendation-System"
+                    target="_blank"
+                    >MovieRec</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="section about">
+        <div class="container">
+          <h2>About & Skills</h2>
+          <div class="about-grid">
+            <div class="about-card reveal">
+              <h3>Education & Experience</h3>
+              <p>
+                <strong>Zagazig University</strong> — Computer and Information
+                (2023–2027). Internship:
+                <em>AI & Data Science (DEPI)</em> (Jun–Dec 2025).
+              </p>
+              <p>
+                Courses & Certs: Algorithm & Design, Data Structures (C++), SQL
+                (HackerRank), OOP in C++.
+              </p>
+            </div>
+
+            <div class="skills-card reveal">
+              <h3>Technical Skills</h3>
+              <ul class="skill-list">
+                <li>
+                  <span>C++</span>
+                  <div class="skill-bar" data-percent="90"><div></div></div>
+                </li>
+                <li>
+                  <span>Python</span>
+                  <div class="skill-bar" data-percent="92"><div></div></div>
+                </li>
+                <li>
+                  <span>SQL / Postgres</span>
+                  <div class="skill-bar" data-percent="82"><div></div></div>
+                </li>
+                <li>
+                  <span>Data Structures & Algorithms</span>
+                  <div class="skill-bar" data-percent="88"><div></div></div>
+                </li>
+                <li>
+                  <span>Web Scraping / dbt / Airflow</span>
+                  <div class="skill-bar" data-percent="70"><div></div></div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects" class="section projects">
+        <div class="container">
+          <h2>Projects</h2>
+          <div class="projects-grid">
+            <article class="project-card reveal">
+              <h4>Movie Recommendation System</h4>
+              <p>
+                Python-based recommender using Pandas for analysis; dataset
+                5,000+ movies. Includes genre & popularity filters.
+              </p>
+              <div class="proj-links">
+                <a
+                  href="https://github.com/BasmalaHesham2/Movie-Recommendation-System"
+                  target="_blank"
+                  >View Repo</a
+                >
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <h4>Student Performance Tracker</h4>
+              <p>
+                OOP Python project to track students, grades, and reports.
+                Focused on modular design and error handling.
+              </p>
+              <div class="proj-links">
+                <a href="#">Details</a>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <h4>Library Management System</h4>
+              <p>
+                Python application handling 100+ book records, borrowing/return
+                logic, and inventory tracking.
+              </p>
+              <div class="proj-links">
+                <a
+                  href="https://github.com/BasmalaHesham2/library"
+                  target="_blank"
+                  >View Repo</a
+                >
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <h4>Universe Database (freeCodeCamp)</h4>
+              <p>
+                Relational DB modeling planets, moons and populations using
+                PostgreSQL.
+              </p>
+              <div class="proj-links">
+                <a
+                  href="https://github.com/BasmalaHesham2/fcc-postgres-universedb"
+                  target="_blank"
+                  >View Repo</a
+                >
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="section contact">
+        <div class="container">
+          <h2>Contact</h2>
+          <div class="contact-grid">
+            <div class="contact-card reveal">
+              <h3>Get in touch</h3>
+              <p>
+                Email:
+                <a href="mailto:basmalahesham232@gmail.com"
+                  >basmalahesham232@gmail.com</a
+                >
+              </p>
+              <p>Phone: <a href="tel:+201030702240">+20 1030702240</a></p>
+              <p>
+                LinkedIn:
+                <a
+                  href="https://www.linkedin.com/in/basmala-hesham/"
+                  target="_blank"
+                  >Profile</a
+                >
+              </p>
+              <p>
+                GitHub:
+                <a href="https://github.com/BasmalaHesham2" target="_blank"
+                  >BasmalaHesham2</a
+                >
+              </p>
+            </div>
+
+            <form id="contactForm" class="contact-form reveal">
+              <label>
+                <span>Name</span>
+                <input type="text" id="name" required placeholder="Your name" />
+              </label>
+              <label>
+                <span>Email</span>
+                <input
+                  type="email"
+                  id="email"
+                  required
+                  placeholder="you@example.com"
+                />
+              </label>
+              <label>
+                <span>Message</span>
+                <textarea
+                  id="message"
+                  rows="5"
+                  required
+                  placeholder="Write a short message..."
+                ></textarea>
+              </label>
+              <div class="form-actions">
+                <button type="submit" class="btn">Send Message</button>
+              </div>
+              <div
+                id="formFeedback"
+                class="form-feedback"
+                aria-live="polite"
+              ></div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="container">
+          <p>© 2025 Basmala Hesham • Built with care</p>
+        </div>
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
